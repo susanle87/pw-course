@@ -68,4 +68,4 @@ let totalIncom = 0
 for (let i = 0; i < incomMonthArr.length; i++) {
     totalIncom = totalIncom + incomMonthArr[i]
 }
-console.log("Doanh thu 12 thang: ", totalIncom)
+console.log("Bài 5 Doanh thu 12 thang: ", totalIncom)
