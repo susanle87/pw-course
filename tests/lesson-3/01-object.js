@@ -15,7 +15,6 @@ let person = {
         "street": "An Phu Dong",
         "city": "Ho Chi Minh",
         "country": "VietName"
-
     }
 }
 console.log("Street = " + person.address.city);

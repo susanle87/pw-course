@@ -1,21 +1,23 @@
-//tổng 1-100
+//Bai 1 tổng 1-100
 function sumtotal(a, b) {
     let i = a;
     let sum = 0
     for (i = a; i <= b; i++) {
         sum = sum + i
     }
-    console.log(sum);
+    console.log("Bai 1 tổng 1-100 ", sum)
 }
 sumtotal(1, 100);
 
 //in ra bảng cửu chương từ 2-9
 function multable(a, b) {
     for (let i = a; i <= b; i++) {
+        console.log("Bảng cửu chương ", i)
         for (let j = 1; j <= b; j++) {
             mul = `${i} x ${j} = ${i * j}\t`;;
             console.log(mul)
         }
+        console.log(`\b`)
     }
 }
 multable(2, 9)
@@ -28,26 +30,21 @@ function evenArr(a, b) {
             evenumArr.push(i)
         }
     }
-    console.log(evenumArr)
+    console.log("Bài 3 in mảng chứa số+ lẻ", evenumArr)
 }
 evenArr(1, 99)
 
 //In ra 10 email dựa trên tên người dùng và số thứ tự
-function genEmail(username, email, total) {
+function genEmail(username,  total) {
     let emaillist = []
     for (let i = 1; i <= total; i++) {
-        emaillist.push(username + i + email)
+        emaillist.push(username + i + `@email.com`)
     }
     console.log(emaillist)
 }
-genEmail("susan", "@email.com", 10)
+genEmail("susan", 10)
 
 //Tính tổng doanh thu của 12 tháng trong năm dựa trên mảng doanh thu đã cho và in ra tổng doanh thu. 
-//Note:có tham khảo 
-function totalIncom(incomesArr) {
-    let totalincom = incomesArr.reduce((sum, item) => sum + test.total, 0)
-    return totalincom
-}
 let incomesArr = [
     { month: 1, total: 100 },
     { month: 2, total: 120 },
@@ -62,5 +59,13 @@ let incomesArr = [
     { month: 11, total: 210 },
     { month: 12, total: 220 }
 ]
-let totalincom12 = totalIncom(incomesArr)
-console.log("Doanh thu 12 tháng", totalincom12)
+let incomMonthArr = []
+for (let i = 0; i < incomesArr.length; i++) {
+    let total = incomesArr[i].total
+    incomMonthArr.push(total);
+}
+let totalIncom = 0
+for (let i = 0; i < incomMonthArr.length; i++) {
+    totalIncom = totalIncom + incomMonthArr[i]
+}
+console.log("Doanh thu 12 thang: ", totalIncom)
