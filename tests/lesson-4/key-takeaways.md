@@ -47,10 +47,10 @@
     <br> "c: 3"
 
 * forEach: dùng để duyệt qua từng phần tử của mảng
-   <br>> Example1: Arrary:  arrA=[1,2,3,4]
+   <br> Example1: Arrary:  arrA=[1,2,3,4]
      <br>arrA.forEach((number) => { 
-     console.log(number);})
-    -Example 2: Object in array
+    <br> console.log(number);})
+    <br>Example 2: Object in array
     <br> const staffsDetails = [
    <br> { name: "Jam Josh", age: 44, salary: 4000, currency: "USD" },
    <br> { name: "Justina Kap", age: 34, salary: 3000, currency: "USD" },
@@ -64,10 +64,10 @@ expected: <br> I am Jam Josh, age 44 and a staff of Royal.
 <br>I am Justina Kap, age 34 and a staff of Royal.
  <br>I am Chris Colt, age 37 and a staff of Royal.
 
-* for ...of: Duyệt từng element trong mảng
+* for ...of: Duyệt từng element trong mảng và in ra từng phần tử
     <br>-const array = ["a", "b", "c"];
      <br>for (const element of array) {
-        <br>console.log(element);}
+        <br>console.log(element);} 
 
 #### JavaScript String Reference
 * Name         &ensp;&ensp;Description
@@ -93,7 +93,7 @@ expected: <br> I am Jam Josh, age 44 and a staff of Royal.
 <br>trimStart() &ensp;Returns a string with removed whitespaces from the start
 
 ### Array utils function
-#### array.map : trả về 1 mảng mới vs kết quả là điều kiện ở trong function
+#### Array.map : trả về 1 mảng mới vs kết quả là điều kiện ở trong function
 <br>exam1: array =[1,2,3,4] ; newArr=array.map(num => num *2)
 <br>expected: newArr =[2,4,6,8]
 <br> exam2
@@ -105,7 +105,7 @@ expected: <br> I am Jam Josh, age 44 and a staff of Royal.
         }.
     }) console.log (newArr)==>expected (1,2,3,8)
 
-#### array.reduce : Rút gọn các giá trị của một mảng thành một giá trị duy nhất (theo hướng từ trái sang phải)."
+#### Array.reduce : Rút gọn các giá trị của một mảng thành một giá trị duy nhất (theo hướng từ trái sang phải)."
  <br> exam :    
   <br>array1 =[1,2,3,4] ; newArr1=array1.reduce((currVal,accumval) => currVal+accumval)
   <br>  console.log(newArr1) ==> Expected =10
@@ -116,7 +116,7 @@ expected: <br> I am Jam Josh, age 44 and a staff of Royal.
  <br> const newSumArr=staffsDetails1.reduce((sum, item) => sum + item.age,0 )
  <br> console.log(newSumArr)  => expected 44+34+37=115
 
-#### array.find : trả ra phần tử đầu tiên thỏa mãn điều kiện
+#### Array.find : trả ra phần tử đầu tiên thỏa mãn điều kiện
   <br> array1 =[1,6,3,4] ; newArr1=array1.find((num) => num %3 ===0)
   <br>console.log (newArr1) ==> expected 6
  <br> example2: object in arr
@@ -127,7 +127,7 @@ expected: <br> I am Jam Josh, age 44 and a staff of Royal.
    <br>newstaff =staffsDetails.find((item) =>item.age=44)
     <br>console.log(newstaff.name)
 
-#### array.every : trả ra true/false nếu các phần tử thỏa mãn điều kiện
+#### Array.every : trả ra true/false nếu các phần tử thỏa mãn điều kiện
  <br>array1 =[1,6,3,4] ; newArr1=array1.every((num) => num %3 ===0)
   <br>console.log (newArr1) ==> expected false
  <br> example 2:  staffsDetails=[ 
@@ -137,18 +137,18 @@ expected: <br> I am Jam Josh, age 44 and a staff of Royal.
    <br>newstaff =staffsDetails.every((item) =>item.age !=40)
     <br>console.log(newstaff) ==> return  true
 
- #### array.filter : trả ra các phần tử thỏa mãn điều kiện
- - array1 =[1,6,3,4] ; newArr1=array1.filler((num) => num %3 ===0)
+ #### Array.filter : trả ra các phần tử thỏa mãn điều kiện
+   <br> example 1: array1 =[1,6,3,4] ; newArr1=array1.filler((num) => num %3 ===0)
    <br>console.log (newArr1) ==> [6,3]
-   example 2:  staffsDetails=[ 
+   <br> example 2:  staffsDetails=[ 
    <br>  { name: "Jam Josh", age: 44, salary: 4000, currency: "USD" },
    <br> { name: "Justina Kap", age: 34, salary: 3000, currency: "USD" },
    <br> { name: "Chris Colt", age: 37, salary: 3700, currency: "USD" }];
    <br>newstaff =staffsDetails.filter((item) =>item.age <=40)
     <br>console.log(newstaff) 
     <br>for (let i=0; i <newstaff4.length; i ++){
-    <br>console.log(newstaff4[i].name) } ==> expected Justina Kap,Chris Colt
+    console.log(newstaff4[i].name) } ==> expected Justina Kap,Chris Colt
 
-#### array.some: trả về true/false nếu trong mảng tồn tại phần tử thỏa mãn điều kiện
+#### Array.some: trả về true/false nếu trong mảng tồn tại phần tử thỏa mãn điều kiện
 <br> ex: const numbers = [65, 44, 12, 4];
  <br>console.log (numbers.some(num => num % 2 ==0)) => expected: true
