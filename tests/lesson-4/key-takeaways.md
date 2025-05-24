@@ -47,7 +47,7 @@
     <br> "c: 3"
 
 * forEach: dùng để duyệt qua từng phần tử của mảng
-    Example1: Arrary:  arrA=[1,2,3,4]
+   <br>> Example1: Arrary:  arrA=[1,2,3,4]
      <br>arrA.forEach((number) => { 
      console.log(number);})
     -Example 2: Object in array
@@ -94,9 +94,9 @@ expected: <br> I am Jam Josh, age 44 and a staff of Royal.
 
 ### Array utils function
 #### array.map : trả về 1 mảng mới vs kết quả là điều kiện ở trong function
-exam: array =[1,2,3,4] ; newArr=array.map(num => num *2)
-expected: newArr =[2,4,6,8]
-<br> we have condition  
+<br>exam1: array =[1,2,3,4] ; newArr=array.map(num => num *2)
+<br>expected: newArr =[2,4,6,8]
+<br> exam2
     array =[1,2,3,4] ; newArr=array.map((num) =>{ 
         if (num %2 ==0){
             return num*2}
@@ -106,9 +106,9 @@ expected: newArr =[2,4,6,8]
     }) console.log (newArr)==>expected (1,2,3,8)
 
 #### array.reduce : Rút gọn các giá trị của một mảng thành một giá trị duy nhất (theo hướng từ trái sang phải)."
-exam :    
- - array1 =[1,2,3,4] ; newArr1=array1.reduce((currVal,accumval) => currVal+accumval)
-     console.log(newArr1) ==> Expected =10
+ <br> exam :    
+  <br>array1 =[1,2,3,4] ; newArr1=array1.reduce((currVal,accumval) => currVal+accumval)
+  <br>  console.log(newArr1) ==> Expected =10
   <br> const staffsDetails1 = [
   <br>  { name: "Jam Josh", age: 44, salary: 4000, currency: "USD" },
    <br> { name: "Justina Kap", age: 34, salary: 3000, currency: "USD" },
@@ -117,9 +117,9 @@ exam :
  <br> console.log(newSumArr)  => expected 44+34+37=115
 
 #### array.find : trả ra phần tử đầu tiên thỏa mãn điều kiện
- - array1 =[1,6,3,4] ; newArr1=array1.find((num) => num %3 ===0)
+  <br> array1 =[1,6,3,4] ; newArr1=array1.find((num) => num %3 ===0)
   <br>console.log (newArr1) ==> expected 6
-* example2: object in arr
+ <br> example2: object in arr
    <br> const staffsDetails = [
   <br>  { name: "Jam Josh", age: 44, salary: 4000, currency: "USD" },
    <br> { name: "Justina Kap", age: 34, salary: 3000, currency: "USD" },
@@ -128,9 +128,9 @@ exam :
     <br>console.log(newstaff.name)
 
 #### array.every : trả ra true/false nếu các phần tử thỏa mãn điều kiện
-- array1 =[1,6,3,4] ; newArr1=array1.every((num) => num %3 ===0)
+ <br>array1 =[1,6,3,4] ; newArr1=array1.every((num) => num %3 ===0)
   <br>console.log (newArr1) ==> expected false
-example 2:  staffsDetails=[ 
+ <br> example 2:  staffsDetails=[ 
    <br>  { name: "Jam Josh", age: 44, salary: 4000, currency: "USD" },
    <br> { name: "Justina Kap", age: 34, salary: 3000, currency: "USD" },
    <br> { name: "Chris Colt", age: 37, salary: 3700, currency: "USD" }];
