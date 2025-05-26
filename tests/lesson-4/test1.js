@@ -1,22 +1,12 @@
 //1.  Hành tinh khởi đầu: 
-const departurePlanet = "Trái Đất";
-const mission = "Khám phá Vũ trụ K14";
+let departurePlanet = "Trái Đất";
+let mission = "Khám phá Vũ trụ K14";
 
-const crew = [
-    {
-        "name": ["An", "Bình", "Châu"]
-    }
-]
+const crew = ["An", "Bình", "Châu"]
 function getCrewlist(item) {
-    let crewArr = []
-    let crewList = ""
-    for (let i = 0; i < item.length; i++) {
-        crewArr.push(item[i].name)
-    }
-    console.log("Chuẩn bị khởi động! Phi hành đoàn gồm:", crewArr.toString(), "sẽ đồng hành cùng bạn trong chuyến phiêu lưu ", mission)
-
+   return `Chuẩn bị khởi động! Phi hành đoàn gồm: ${item.join(", ")} sẽ đồng hành cùng bạn trong chuyến phiêu lưu ${mission}.`;
 }
-getCrewlist(crew)
+console.log (getCrewlist(crew))
 
 // 2. Du hành đến hành tinh bí ẩn
 function calculateDistance(speed, time) {
