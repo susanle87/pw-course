@@ -37,7 +37,7 @@
 * if .. else
 * if .. else if ...if
 * switch .. case
-* for..in: Duyệt các phần từng của mảng 
+* for..in: duyệt qua các phần tử trong mảng/object và trả về index của phần tử
   <br> const object = { a: 1, b: 2, c: 3 };
    <br> for (const property in object) {
   <br>  console.log(`${property}: ${object[property]}`);    }
@@ -46,7 +46,7 @@
     <br> "b: 2"
     <br> "c: 3"
 
-* forEach: dùng để duyệt qua từng phần tử của mảng
+* forEach: à duyệt qua các phần tử trong mảng theo và trả về value của phần tử
    <br> Example1: Arrary:  arrA=[1,2,3,4]
      <br>arrA.forEach((number) => { 
     <br> console.log(number);})

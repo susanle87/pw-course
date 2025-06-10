@@ -12,9 +12,20 @@ for (let char of str) {
 console.log("Mảng đảo ngược :", swapArr.reverse())
 
 //2.3 tìm và in vi trí đầu tiên và cuối cùng của giá trị 3 trong arr
-const arr = [1, 2, 3, 4, 3, 55, 23];
-console.log('Vị trí đầu của số 3 là', arr.indexOf(3))
-console.log('Vị trí cuối của số 3 là', arr.lastIndexOf(3))
+const numbers = [3, 2, 5, 3, 6, 3];
+let firstIndex = -1;
+let lastIndex = -1;
+
+for (let [index, num] of numbers.entries()) {
+    if (num === 3) {
+        if (firstIndex === -1) {
+            firstIndex = index;
+        }
+        lastIndex = index;
+    }
+}
+console.log("Vị trí đầu tiên:", firstIndex);
+console.log("Vị trí cuối cùng:", lastIndex);
 
 //2.4 Lọc các phần tử xuất hiện 1 lần trong dupArr index đầu vs index cuối giống nhau
 const dupArr = [1, 2, 3, 1, 2, 4, 5];
